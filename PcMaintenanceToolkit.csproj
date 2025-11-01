@@ -30,4 +30,8 @@
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Include=".github\workflows\release.yml" />
+	</ItemGroup>
+
 </Project>
