@@ -1,8 +1,23 @@
-
+# .NET Build Outputs
 bin/
 obj/
 publish/
 
+# User Secrets
+secrets.json
+
+# Config Files
+appsettings*.json
+
+# VS Code
 .vscode/
 
-appsettings.json
+# Logs
+*.log
+
+# Dependencies
+packages/
+
+# OS
+.DS_Store
+Thumbs.db

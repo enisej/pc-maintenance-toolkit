@@ -1,3 +1,0 @@
-C:\Users\ilj41\source\repos\PcMaintenanceToolkit\PcMaintenanceToolkit\publish\PcMaintenanceToolkit.pdb
-C:\Users\ilj41\source\repos\PcMaintenanceToolkit\PcMaintenanceToolkit\publish\appsettings.json
-C:\Users\ilj41\source\repos\PcMaintenanceToolkit\PcMaintenanceToolkit\publish\PcMaintenanceToolkit.exe
