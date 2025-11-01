@@ -1,6 +1,7 @@
 ﻿# PC Maintenance Toolkit
 
-A **.NET 9.0 console app** for running PC maintenance tasks (SFC, Power Report, Disk Check) and **custom PowerShell commands** — all **saved in PostgreSQL** with full logging.
+A **.NET 9.0 console app** for running PC maintenance tasks (SFC, Power Report, Disk Check) and **custom PowerShell commands** all **saved in PostgreSQL** with full logging.
+
 
 ## Stack
 
