@@ -23,24 +23,27 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      - name: Build
+        run: dotnet build -c Release
+
       - name: Publish (Single File, Self-Contained)
         run: |
-          dotnet publish -c Release -r win-x64 --self-contained true `
-            -p:PublishSingleFile=true `
-            -p:IncludeNativeLibrariesForSelfExtract=true `
+          dotnet publish -c Release -r win-x64 --self-contained true ^
+            -p:PublishSingleFile=true ^
+            -p:IncludeNativeLibrariesForSelfExtract=true ^
             -o publish
 
       - name: Create pcmt.bat
         run: |
-          echo @echo off > publish\pcmt.bat
-          echo "%~dp0PcMaintenanceToolkit.exe" %%* >> publish\pcmt.bat
+          echo @echo off ^> publish\pcmt.bat
+          echo "publish\PcMaintenanceToolkit.exe" %%* ^>^> publish\pcmt.bat
 
-      - name: Upload Release Assets
+      - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             publish/PcMaintenanceToolkit.exe
             publish/pcmt.bat
-            README.md
+          generate_release_notes: true
           draft: false
           prerelease: false
